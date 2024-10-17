@@ -4,6 +4,16 @@
     font-family:'Roboto', sans-serif;
 }
 
+:root {
+    --primary-color:#9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color:#99E2D0;
+}
+
+.fa-solid{
+    color:#FFFFFF;
+}
+
 header{
     width:375px;
     height: 113px;
@@ -24,11 +34,11 @@ header img{
     display:flex;
     gap:17px;
     background-color: #EAEAEA;
-    width:375px;
-    height:50px;
     font-size:16px;
-    font-weigth:500;
+    font-weight:500;
+    /*revoir bandes ombrées dessus dessous*/
 }
+
 
 /*revoir positionnement icone localisation*/
 .localisation img{
@@ -36,9 +46,26 @@ header img{
     height:16px;
 }
 
-width: Fixed (375px)px;
-height: Fixed (50px)px;
-top: 62.5px;
-left: -0.5px;
-gap: 17px;
-opacity: 0px;
+
+footer{
+    background-color: #353535;
+    color:#FFFFFF;
+    padding:22px 25px 22px 25px;
+    gap:16px;
+}
+
+/*modifier logo svg en blanc*/
+footer img{
+    fill:#FFFFFF !important;
+    width:139px;
+    height:27px;
+}
+
+footer li{
+    list-style-type: none;
+    gap:7px;
+}
+
+footer p{
+  gap:7px;
+}
