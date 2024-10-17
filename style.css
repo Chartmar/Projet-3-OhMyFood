@@ -14,8 +14,9 @@
     color:#FFFFFF;
 }
 
+/***HEADER***/
+
 header{
-    width:375px;
     height: 113px;
     display:flex;
     flex-direction: column;
@@ -29,23 +30,25 @@ header img{
     height: 36px;
 }
 
-/*revoir bandeau gris sur toute la largeur*/
 .localisation{
     display:flex;
+    justify-content: center;
     gap:17px;
+    width:100%;
     background-color: #EAEAEA;
     font-size:16px;
     font-weight:500;
-    /*revoir bandes ombrées dessus dessous*/
+    height:50px;
 }
+/*revoir bandes ombrées dessus dessous*/
 
-
-/*revoir positionnement icone localisation*/
 .localisation img{
     width:12px;
     height:16px;
+    margin:16px 0 16px 0;
 }
 
+/*****FOOTER****/
 
 footer{
     background-color: #353535;
@@ -61,11 +64,21 @@ footer img{
     height:27px;
 }
 
-footer li{
-    list-style-type: none;
+footer svg{
+    fill:#FFFFFF !important;
+    width:139px;
+    height:27px;
+}
+
+
+footer ul {
+    padding:0;
+    display:flex;
+    flex-direction: column;
     gap:7px;
 }
 
-footer p{
-  gap:7px;
+footer li{
+    list-style-type: none;
 }
+
