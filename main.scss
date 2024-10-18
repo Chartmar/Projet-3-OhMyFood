@@ -1,17 +1,28 @@
 
-/*test création classes récurrentes*/
+/*création classes récurrentes*/
 .flex{
     display:flex;
 }
 
-.bg-blue{
-    background-color: blueviolet;
+.flex-dir-column{
+    flex-direction: column;
+}
+    
+.flex-dir-row{
+    flex-direction: row;
 }
 
+.justify-content-center{
+    justify-content: center;
+}
 
-/*fin test*/
+.align-items-center{
+    align-items: center;
+}
 
-/*logo et titres : Shrikhand, texte : Roboto*/
+.width-100{
+    width:100%;
+}
 
 *{
     font-family:'Roboto', sans-serif;
@@ -24,7 +35,7 @@
 }
 
 .fa-solid{
-    color:#FFFFFF;
+    color : #FFFFFF;
 }
 
 
@@ -36,10 +47,6 @@ body{
 
 header{
     height: 113px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin:auto;
     gap:17px;
 }
 
@@ -49,10 +56,7 @@ header img{
 }
 
 .localisation{
-    display:flex;
-    justify-content: center;
     gap:17px;
-    width:100%;
     background-color: #EAEAEA;
     font-size:16px;
     font-weight:500;
@@ -69,27 +73,30 @@ header img{
 /*****FOOTER****/
 
 footer{
+    color: 
     background-color: #353535;
-    color:#FFFFFF;
     padding:22px 25px 22px 25px;
     gap:16px;
 }
 
-footer svg path {
-    fill:#FFFFFF !important;
-    width:10px;
-    height:10px;
-}
-
-
 footer ul {
-    padding:0;
-    display:flex;
-    flex-direction: column;
     gap:7px;
+    padding:0;
 }
 
+footer svg{
+    width:139px;
+    height:27px;
+}
 footer li{
     list-style-type: none;
+    gap:22px;
+    }
+
+footer li i{
+    margin-right:22px;
 }
 
+footer svg path{
+
+}
