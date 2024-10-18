@@ -1,3 +1,16 @@
+
+/*test création classes récurrentes*/
+.flex{
+    display:flex;
+}
+
+.bg-blue{
+    background-color: blueviolet;
+}
+
+
+/*fin test*/
+
 /*logo et titres : Shrikhand, texte : Roboto*/
 
 *{
@@ -14,6 +27,11 @@
     color:#FFFFFF;
 }
 
+
+body{
+    margin:0; 
+    padding:0;
+}
 /***HEADER***/
 
 header{
@@ -57,17 +75,10 @@ footer{
     gap:16px;
 }
 
-/*modifier logo svg en blanc*/
-footer img{
+footer svg path {
     fill:#FFFFFF !important;
-    width:139px;
-    height:27px;
-}
-
-footer svg{
-    fill:#FFFFFF !important;
-    width:139px;
-    height:27px;
+    width:10px;
+    height:10px;
 }
 
 
