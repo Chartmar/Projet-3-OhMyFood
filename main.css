@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*test création classes récurrentes*/
+/*création classes récurrentes*/
 .flex {
   display: flex;
 }
@@ -24,12 +24,6 @@
   width: 100%;
 }
 
-.bg-blue {
-  background-color: blueviolet;
-}
-
-/*fin test*/
-/*logo et titres : Shrikhand, texte : Roboto*/
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -38,11 +32,10 @@
   --primary-color:#9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color:#99E2D0;
-  --white:#FFFFFF;
 }
 
 .fa-solid {
-  color: --white;
+  color: #FFFFFF;
 }
 
 body {
@@ -78,6 +71,7 @@ header img {
 
 /*****FOOTER****/
 footer {
+  color: #FFFFFF;
   background-color: #353535;
   padding: 22px 25px 22px 25px;
   gap: 16px;
@@ -85,6 +79,7 @@ footer {
 
 footer ul {
   gap: 7px;
+  padding: 0;
 }
 
 footer svg {
@@ -94,9 +89,13 @@ footer svg {
 
 footer li {
   list-style-type: none;
-  gap: 22px;
+  gap: 100px;
 }
 
 footer li i {
-  margin-right: 22px;
+  margin-right: 10px;
+}
+
+footer svg path {
+  fill: #FFFFFF !important;
 }/*# sourceMappingURL=main.css.map */

@@ -73,30 +73,30 @@ header img{
 /*****FOOTER****/
 
 footer{
-    color: 
+    color: #FFFFFF;
     background-color: #353535;
     padding:22px 25px 22px 25px;
     gap:16px;
-}
-
-footer ul {
+  }
+  
+  footer ul{
     gap:7px;
     padding:0;
-}
-
-footer svg{
+  }
+  
+  footer svg{
     width:139px;
     height:27px;
-}
-footer li{
+  }
+  footer li{
     list-style-type: none;
-    gap:22px;
+    gap:100px;
     }
 
-footer li i{
-    margin-right:22px;
-}
-
-footer svg path{
-
-}
+    footer li i{
+        margin-right:10px;
+    }
+  
+  footer svg path{
+    fill:#FFFFFF !important;
+  }
