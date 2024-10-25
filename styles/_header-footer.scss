@@ -1,0 +1,61 @@
+/***HEADER***/
+
+header {
+    height: 113px;
+    gap: 17px;
+}
+
+header img {
+    width: 197px;
+    height: 36px;
+}
+
+
+.localisation {
+    gap: 17px;
+    background-color: #EAEAEA;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    box-shadow: 0px 4px 10px 0px rgb(211, 208, 208) inset, 0px 4px 5px 2px rgb(211, 208, 208);
+}
+
+.localisation img {
+    width: 12px;
+    height: 16px;
+    margin: 16px 0 16px 0;
+}
+
+
+
+/*****FOOTER****/
+
+
+footer {
+    color: var(--white);
+    background-color: #353535;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
+
+    svg {
+        width: 139px;
+        height: 27px;
+
+        path {
+            fill: var(--white) !important;
+        }
+    }
+
+    ul {
+        gap: 7px;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
