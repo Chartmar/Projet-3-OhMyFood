@@ -14,25 +14,72 @@
         <header class="flex flex-dir-column justify-content-center align-items-center">
         
             <img src="images/logo/ohmyfood.png" alt="logo de Oh My Food">
+            <!--Créer div Info Location-->
 
-            <div class="localisation flex width-100 justify-content-center">
-            <img src="images/icones/Pin.svg" alt="icone de localisation">
-            <p>Paris, Belleville</p>
-            </div>
-<!--Mettre Paris, Belleville en input + placeholder-->
-        </header>
+            <form class="localisation flex width-100 justify-content-center" action="">
+                <img src="images/icones/Pin.svg" alt="icone de localisation">
+                <input type="search" id="search" name="search" value="Paris, Belleville">
+            </form>
+            
+        </header>  
 
 
         <main>
 
-            <section class="titleSection"> <!--Section Title-->
+            <section class="titleSection">
                 <h1>Réservez le menu qui vous convient</h1>
-                <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <button type="submit" class="titleSection__button">Explorer nos restaurants</button>
             </section>
-        
-            <section> <!--Button "explorer nos restaurants"-->
-                <p>"BOUTTON EXPLORER NOS RESTAURANTS"</p>
+
+            <section id="fonctionnement">
+
+                <h2>Fonctionnement</h2>
+
+                    <div class="fonctionnement__functions">
+                        <div class="fonctionnement__number ">1</div>
+                        <div class="fonctionnement__text"><i class="fa-solid fa-mobile-screen-button grey"></i>Choisissez un restaurant</div>
+                        
+                    </div>
+                
+                    <div class="fonctionnement__functions">
+                        <div class="fonctionnement__number">2</div>
+                        <div class="fonctionnement__text"><i class="fa-solid fa-list grey"></i>Composez votre menu</div>
+                    </div>
+
+                    <div class="fonctionnement__functions">
+                        <div class="fonctionnement__number">3</div>
+                        <div class="fonctionnement__text"><i class="fa-solid fa-store grey"></i>Dégustez au restaurant</div>
+                    </div>
+              
+
             </section>
+
+            <section id="restaurants"><restaurants>
+                <h2>Restaurants</h2>
+
+
+                <div class="restaurants--cards">
+                    <img src="" alt="">
+                    <h3>La palette du goût</h3>
+                    <h4>Ménilmontant</h4>
+                </div>
+
+                <a href="#">
+                    <article class="card">
+                        <img src="" alt="">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>
+                                <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                            </div>
+                    <div>nouveauté</div>
+                        </div>
+                    </article>
+                </a>
+
+
+           </section>
 
 
         </main>

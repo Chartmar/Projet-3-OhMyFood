@@ -1,0 +1,116 @@
+/*******MAIN******/
+
+/*****Search Section****/
+
+form {
+    padding-left: 40px;
+
+    #search {
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.localisation {
+    gap: 17px;
+    color: #353535;
+    /*revoir couleur*/
+    background-color: #EAEAEA;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    box-shadow: 0px 4px 10px 0px rgb(211, 208, 208) inset, 0px 4px 5px 2px rgb(211, 208, 208);
+
+    img {
+        width: 12px;
+        height: 16px;
+        margin: 16px 0 16px 0;
+    }
+}
+
+/*****Title Section****/
+
+/*nester*/
+.titleSection {
+    @include flex-center-column;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    width: 275px;
+    height: 68px;
+}
+
+p {
+    /*centrer texte H1 et p*/
+    font-weight: 300;
+    font-size: 18px;
+    width: 315px;
+    height: 46px;
+}
+
+.titleSection__button {
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: 0;
+    border-radius: 45px;
+    color: var(--white);
+    @include box-shadow;
+    font-size: 16px;
+}
+
+/****Fonctionnement Section****/
+
+/*nester*/
+#fonctionnement {
+    background-color: var(--white);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 20px;
+    width: 275px;
+    height: 31px;
+    padding-top: 35px;
+}
+
+.fonctionnement__functions {
+    @include flex-center-row;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.fonctionnement__number {
+    background: var(--primary-color);
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    @include flex-center-column;
+    color: var(--white);
+    position :relative;
+    left:10px;
+}
+
+.fonctionnement__text {
+    @include box-shadow;
+    @include flex-center-row;
+    gap: 10px;
+    border-radius: 20px;
+    width: 322px;
+    height: 72px;
+    background-color: #F6F6F6;
+
+}
+
+.grey{
+    color:#7E7E7E;
+}
+
+/*mettre icônes en #7E7E7E*/
+
+/*****Restaurants Section*****/

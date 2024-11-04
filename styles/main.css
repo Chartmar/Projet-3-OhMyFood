@@ -1,69 +1,21 @@
 @charset "UTF-8";
-/***HEADER***/
-header {
-  height: 113px;
-  gap: 17px;
-}
-
-header img {
-  width: 197px;
-  height: 36px;
-}
-
-.localisation {
-  gap: 17px;
-  background-color: #EAEAEA;
-  font-size: 16px;
-  font-weight: 500;
-  height: 50px;
-  box-shadow: 0px 4px 10px 0px rgb(211, 208, 208) inset, 0px 4px 5px 2px rgb(211, 208, 208);
-}
-
-.localisation img {
-  width: 12px;
-  height: 16px;
-  margin: 16px 0 16px 0;
-}
-
-/*****FOOTER****/
-footer {
-  color: var(--white);
-  background-color: #353535;
-  padding: 22px 25px 22px 25px;
-  gap: 16px;
-}
-footer svg {
-  width: 139px;
-  height: 27px;
-}
-footer svg path {
-  fill: var(--white) !important;
-}
-footer ul {
-  gap: 7px;
-  padding: 0;
-}
-footer ul li {
-  list-style-type: none;
-}
-footer ul li i {
-  margin-right: 10px;
-}
-
 /*CLASSES RECURRENTES*/
 .flex {
   display: flex;
 }
 
 .flex-dir-column {
+  display: flex;
   flex-direction: column;
 }
 
 .flex-dir-row {
+  display: flex;
   flex-direction: row;
 }
 
 .flex-wrap {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -96,12 +48,46 @@ footer ul li i {
   color: var(--white);
 }
 
+/*retirer marge droite au body*/
 body {
   margin: 0;
   padding: 0;
+  background-color: #F6F6F6;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: auto;
 }
 
 /*******MAIN******/
+/*****Search Section****/
+form {
+  padding-left: 40px;
+}
+form #search {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.localisation {
+  gap: 17px;
+  color: #353535;
+  /*revoir couleur*/
+  background-color: #EAEAEA;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  box-shadow: 0px 4px 10px 0px rgb(211, 208, 208) inset, 0px 4px 5px 2px rgb(211, 208, 208);
+}
+.localisation img {
+  width: 12px;
+  height: 16px;
+  margin: 16px 0 16px 0;
+}
+
+/*****Title Section****/
+/*nester*/
 .titleSection {
   display: flex;
   flex-direction: column;
@@ -112,11 +98,118 @@ body {
 h1 {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  width: 275px;
+  height: 68px;
+}
+
+p {
+  /*centrer texte H1 et p*/
+  font-weight: 300;
+  font-size: 18px;
+  width: 315px;
+  height: 46px;
+}
+
+.titleSection__button {
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 0;
+  border-radius: 45px;
+  color: var(--white);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 16px;
+}
+
+/****Fonctionnement Section****/
+/*nester*/
+#fonctionnement {
+  background-color: var(--white);
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 20px;
+  width: 275px;
+  height: 31px;
+  padding-top: 35px;
+}
+
+.fonctionnement__functions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.fonctionnement__number {
+  background: var(--primary-color);
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  position: relative;
+  left: 10px;
+}
+
+.fonctionnement__text {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  width: 322px;
+  height: 72px;
+  background-color: #F6F6F6;
+}
+
+.grey {
+  color: #7E7E7E;
+}
+
+/*mettre icônes en #7E7E7E*/
+/*****Restaurants Section*****/
+/***HEADER***/
+header {
+  height: 113px;
+  gap: 17px;
+}
+header img {
+  width: 197px;
+  height: 36px;
+}
+
+/*****FOOTER****/
+footer {
+  color: var(--white);
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+  margin: 0;
+  gap: 16px;
+}
+footer svg {
+  width: 139px;
+  height: 27px;
+}
+footer svg path {
+  fill: var(--white) !important;
+}
+footer ul {
+  gap: 7px;
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li i {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
