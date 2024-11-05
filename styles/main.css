@@ -51,6 +51,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  /*check wrap sur très petit écran*/
   margin-bottom: 0;
 }
 
@@ -63,6 +66,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
 }
 
@@ -142,25 +147,27 @@ h2 {
   padding-bottom: 30px;
 }
 .restaurants-cards a {
+  width: 100%;
   text-decoration: none;
 }
 .restaurants-cards a .restaurants-cards-unit {
   background-color: var(--white);
   border-radius: 15px;
   box-sizing: content-box;
-  width: 100%;
+  width: auto;
   height: auto;
   margin-left: 50px;
   margin-right: 50px;
   display: grid;
-  grid-template-rows: 231px 1fr;
+  grid-template-rows: 346px 1fr;
   color: black;
+  position: relative;
 }
 .restaurants-cards a .restaurants-cards-unit img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 231px;
+  height: 346px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -174,7 +181,8 @@ h2 {
   align-items: center;
   border-radius: 2px;
   position: absolute;
-  right: 250px;
+  right: 20px;
+  top: 20px;
   /*ajouter décalage vers le bas*/
   font-size: 14px;
   font-weight: 500;
