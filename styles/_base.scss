@@ -1,31 +1,27 @@
-/*CLASSES RECURRENTES*/
+/*MIXINS RECURRENTS*/
 
-.flex {
-    display: flex;
-}
-
-.flex-dir-column {
+@mixin flex-dir-column {
     display:flex;
     flex-direction: column;
 }
 
-.flex-dir-row {
+@mixin flex-dir-row {
     display:flex;
     flex-direction: row;
 }
 
-.flex-wrap {
+@mixin flex-wrap {
     display:flex;
     flex-wrap: wrap;
 }
 
-/*Check wrap*/
-
-.justify-content-center {
+@mixin justify-content-center {
+    display:flex;
     justify-content: center;
 }
 
-.align-items-center {
+@mixin align-items-center {
+    display:flex;
     align-items: center;
 }
 
@@ -52,6 +48,7 @@
 .width-100 {
     width: 100%;
 }
+/*utilité?*/
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -62,6 +59,7 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
     --white: #FFFFFF;
+    --tertiary-color-dark:#008766;
 }
 
 /*créer BCKGD*/
