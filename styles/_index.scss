@@ -1,10 +1,8 @@
 /*******MAIN******/
 
-
-
 /*****Title Section****/
 
-/*nester*/
+/*A nester*/
 .titleSection {
     @include flex-center-column;
 }
@@ -17,6 +15,7 @@ h1 {
     @include flex-center-column;
     @include flex-wrap;/*check wrap sur très petit écran*/ 
     margin-bottom: 0;
+    text-align: center;
 }
 
 .titleSection p {
@@ -27,6 +26,7 @@ h1 {
     @include flex-center-column;
     @include flex-wrap;
     margin-top: 0;
+    text-align:center;
 }
 
 /****Fonctionnement Section****/
@@ -51,9 +51,8 @@ h2 {
 .fonctionnement__functions {
     @include flex-center-row;
     padding-bottom: 20px;
-}
 
-.fonctionnement__number {
+&--number {
     background: var(--primary-color);
     border-radius: 50px;
     width: 24px;
@@ -65,7 +64,7 @@ h2 {
     margin-left: 50px;
 }
 
-.fonctionnement__text {
+&--text {
     @include box-shadow;
     @include flex-center-row;
     gap: 10px;
@@ -78,6 +77,8 @@ h2 {
     font-size: 16px;
     font-weight: 500;
 }
+}
+
 
 .grey {
     color: #7E7E7E;
@@ -160,9 +161,11 @@ h2 {
                     margin-right:25px;
                     align-items:center;
                     transition : all 500ms;
-                    &:hover{/*revoir animation coeur*/
-                        background-color: linear-gradient(#FF79DA, #9356DC);
                     
+                    & :hover {/*revoir animation coeur*/
+                        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+                        background-clip: text;
+                        color: transparent;
                     }
                 }
             }
