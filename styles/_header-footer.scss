@@ -1,17 +1,12 @@
 /***HEADER***/
 
 header {
-    @include flex-center-column;
     height: 113px;
     gap: 17px;
 
     img {
         width: 197px;
         height: 36px;
-    }
-
-    form {
-        width: 100%;
     }
 
     #search {
@@ -22,12 +17,9 @@ header {
     }
 }
 
-
 .localisation {
-    @include flex-center-row;
     gap: 17px;
     color: #353535;
-    /*revoir couleur*/
     background-color: #EAEAEA;
     font-size: 16px;
     font-weight: 500;
@@ -41,10 +33,7 @@ header {
         }
 }
 
-
-
 /*****FOOTER****/
-
 
 footer {
     color: var(--white);

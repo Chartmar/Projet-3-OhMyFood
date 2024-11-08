@@ -1,10 +1,48 @@
 @charset "UTF-8";
-/*MIXINS RECURRENTS*/
-.width-100 {
+/*CLASSES RECURRENTES*/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-left-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w100 {
   width: 100%;
 }
 
-/*utilité?*/
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -35,25 +73,11 @@ body {
 /*******MAIN******/
 /*****Title Section****/
 /*A nester*/
-.titleSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   font-weight: 700;
   font-size: 24px;
   width: 100%;
   height: 68px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  /*check wrap sur très petit écran*/
   margin-bottom: 0;
   text-align: center;
 }
@@ -63,12 +87,6 @@ h1 {
   font-size: 18px;
   width: 100%;
   height: 46px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 0;
   text-align: center;
 }
@@ -92,10 +110,6 @@ h2 {
 }
 
 .fonctionnement__functions {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 20px;
 }
 .fonctionnement__functions--number {
@@ -103,10 +117,6 @@ h2 {
   border-radius: 50px;
   width: 24px;
   height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: var(--white);
   position: relative;
   left: 10px;
@@ -114,13 +124,8 @@ h2 {
 }
 .fonctionnement__functions--text {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 20px;
-  width: 100%;
   /*si je mets une width fixe de 322px comme sur la maquette, ça ne suit pas la taille de l'écran*/
   height: 72px;
   margin-right: 50px;
@@ -139,15 +144,10 @@ h2 {
 }
 
 .restaurants-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 18px;
   padding-bottom: 30px;
 }
 .restaurants-cards a {
-  width: 100%;
   text-decoration: none;
 }
 .restaurants-cards a .restaurants-cards-unit {
@@ -220,19 +220,12 @@ h2 {
 
 /***HEADER***/
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 113px;
   gap: 17px;
 }
 header img {
   width: 197px;
   height: 36px;
-}
-header form {
-  width: 100%;
 }
 header #search {
   background: none;
@@ -242,13 +235,8 @@ header #search {
 }
 
 .localisation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 17px;
   color: #353535;
-  /*revoir couleur*/
   background-color: #EAEAEA;
   font-size: 16px;
   font-weight: 500;
