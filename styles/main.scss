@@ -1,5 +1,7 @@
-@import '_base';
-@import '_index';
-@import '_header-footer';
-@import '_buttons';
+@import 'base/base-all';
+@import 'layout/layout-all';
+@import 'config/config';
+@import 'pages/pages-all';
+@import 'components/components-all';
+@import 'utilities/utilities-all';
 

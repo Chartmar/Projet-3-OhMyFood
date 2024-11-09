@@ -5,6 +5,6 @@
     border: 0;
     border-radius: 45px;
     color: var(--white);
-    @include box-shadow;
+    box-shadow: 0px 4px 10px 0px #00000040;
     font-size: 16px;
 }

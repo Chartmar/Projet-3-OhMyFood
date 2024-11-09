@@ -1,0 +1,41 @@
+/*TOUT REVOIR
+
+.card{
+    display:flex;
+    flex-direction:column;
+    border-radius:20px;
+    background-color:var(--secondary-color);
+    overflow:hidden; /*empêche le contenu de la carte, dont les photo, de sortir du cadre, ++ si angles arrondis
+
+}
+
+.card-header img{
+    display: block;
+    width:100%;
+}
+
+/*carte horizontale : ajouter classe ".is-inline"
+
+.card:not(.is-inline){
+    flex-direction:column;
+}
+
+.card.is-inline{
+    flex-direction: row;
+}
+
+.card.is-inline .card-header{
+    max-width:25%;
+}
+
+.card.is-inline .card-header img{
+    height:100%;
+    object-fit:cover;
+}
+
+.card.is-inline .card-body{
+align-self: center;
+/*permet de centrer le body si image plus haute que le body*/
+
+
+
