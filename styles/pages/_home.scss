@@ -33,14 +33,15 @@
 .restaurants {
     margin-top: 20px;
 
-    .restaurants-cards {
+    .restaurants__cards {
         gap: 18px;
         padding-bottom: 30px;
+        overflow:hidden;
 
         a {
             text-decoration: none;
 
-            .restaurants-cards-unit {
+            .restaurants__cards--unit {
                 background-color: var(--white);
                 border-radius: 15px;
                 box-sizing: content-box;

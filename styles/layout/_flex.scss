@@ -2,6 +2,12 @@
     display:flex;
 }
 
+.flex-center-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-column{
     display:flex;
     flex-direction: column;
@@ -26,7 +32,7 @@
     align-items: center;
 }
 
-.flex-left-row{
+.flex-row-left{
     display:flex;
     flex-direction: row;
     align-items: center;
