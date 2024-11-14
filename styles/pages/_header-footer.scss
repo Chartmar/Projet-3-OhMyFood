@@ -16,20 +16,30 @@ header {
         font-weight: 500;
     }
 
-    .header_menus{
-        display:flex;
-        flex-direction:row;
+}
+
+/***Header des pages menus***/
+
+.header__menus{
+    height:63px;
+    
+    a{
+        width:30px;
+        height:30px;
+
+            i{
+                width:30px;
+                height:30px;
+                 color:black;
+            }
     }
 
-    .header__arrow{
-        height:30px;
+    .header__arrow img {
         width:30px;
-        color:black;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        height:30px;  
     }
-}
+    }
+
 
 .localisation {
     gap: 17px;

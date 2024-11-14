@@ -1,0 +1,64 @@
+/* SCSS du main de la page La Palette du Goût*/
+
+
+.restaurant__picture {
+        width:100%;
+        max-height:32rem;
+        object-fit: cover;      
+}
+
+.menus__cards{
+    border-radius: 50px 50px 0 0;
+    background-color: #F6F6F6;
+    overflow: hidden;
+    width:100%;
+    position:relative;
+    bottom:50px;
+    justify-content: space-between;
+    
+        img{
+            width:22px;
+            height:22px;  
+            border: 1px;
+            padding-right:100px;
+        }
+}
+
+.submenus{
+    padding:15px;
+    gap:15px;
+    
+    .submenus__card{
+        background-color: var(--white);
+        border-radius:15px; 
+        @include box-shadow;
+        padding:20px;
+        margin-bottom:15px;
+        justify-content: space-between;
+        gap:15px;
+
+
+        .submenus__card--plate{
+            gap:10px;
+            
+            .descript{
+            font-size:15px;
+            margin:0;
+            height:20px;
+            text-align:start;
+            }
+        }
+
+        .plate__price{
+            display:flex;
+            align-items:end;
+            font-weight:700;
+            font-size:15px;
+        }
+    }
+}
+
+.order{
+    padding-top:15px;
+    padding-bottom:40px;
+}
