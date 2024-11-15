@@ -28,7 +28,7 @@
     padding:15px;
     gap:15px;
     
-    .submenus__card{
+    &__card{
         background-color: var(--white);
         border-radius:15px; 
         @include box-shadow;
@@ -38,7 +38,7 @@
         gap:15px;
 
 
-        .submenus__card--plate{
+       &--plate{
             gap:10px;
             
             .descript{

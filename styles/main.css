@@ -53,6 +53,7 @@ h4 {
   font-weight: 400;
   font-style: italic;
   padding: 40px 0 0 25px;
+  margin: 0;
 }
 
 h5 {
@@ -214,6 +215,11 @@ a {
   padding-left: 15px;
   display: flex;
   justify-content: space-between;
+  /*&:hover {
+       revoir animation coeur
+       background: linear-gradient(to bottom, #FF79DA, #9356DC);
+       background-clip: text;
+       color: transparent;*/
 }
 .restaurants .restaurants__cards a .restaurants__cards--unit .card-content .card-subtitle {
   font-size: 17px;
@@ -227,14 +233,6 @@ a {
   display: flex;
   margin-right: 25px;
   align-items: center;
-  transition: all 500ms;
-}
-.restaurants .restaurants__cards a .restaurants__cards--unit .card-content i :hover {
-  /*revoir animation coeur*/
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
 }
 
 /***HEADER***/
@@ -340,7 +338,7 @@ footer ul li i {
   padding: 15px;
   gap: 15px;
 }
-.submenus .submenus__card {
+.submenus__card {
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
@@ -349,16 +347,16 @@ footer ul li i {
   justify-content: space-between;
   gap: 15px;
 }
-.submenus .submenus__card .submenus__card--plate {
+.submenus__card--plate {
   gap: 10px;
 }
-.submenus .submenus__card .submenus__card--plate .descript {
+.submenus__card--plate .descript {
   font-size: 15px;
   margin: 0;
   height: 20px;
   text-align: start;
 }
-.submenus .submenus__card .plate__price {
+.submenus__card .plate__price {
   display: flex;
   align-items: end;
   font-weight: 700;

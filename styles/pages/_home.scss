@@ -96,15 +96,14 @@
                         display: flex;
                         margin-right: 25px;
                         align-items: center;
-                        transition: all 500ms;
-
-                        & :hover {
-                            /*revoir animation coeur*/
+                    }   
+                       /*&:hover {
+                            revoir animation coeur
                             background: linear-gradient(to bottom, #FF79DA, #9356DC);
                             background-clip: text;
-                            color: transparent;
-                        }
-                    }
+                            color: transparent;*/
+                        
+                    
                 }
             }
         }
