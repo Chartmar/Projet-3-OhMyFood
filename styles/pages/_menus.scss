@@ -1,4 +1,4 @@
-/* SCSS du main de la page La Palette du Goût*/
+/* SCSS du main de la page des 4 menus*/
 
 
 .subheader{
@@ -20,13 +20,20 @@
     background-color: #F6F6F6;
     overflow: hidden;
     justify-content: space-between;
-    
-        img{
-            width:22px;
-            height:22px;  
-            border: 1px;
-            padding-right:100px;
+
+
+    .fa-heart{
+        width:22px;
+        height:22px;  
+        padding-right:100px;
+        padding-top:35px;
+
+         &:hover{
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            background-clip: text;
+            color: transparent;
         }
+    }
 }
 
 .submenus{
