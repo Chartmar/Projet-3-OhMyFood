@@ -1,76 +1,122 @@
 /* SCSS du main de la page des 4 menus*/
 
 
-.subheader{
-    width:100%;
-    height:32rem; 
+.subheader {
+    width: 100%;
+    height: 32rem;
 }
 
 .restaurant__picture {
-    width:100%;
-    height:32rem;
+    width: 100%;
+    height: 32rem;
     object-fit: cover;
-    position:absolute;
-    z-index:-1;  
+    position: absolute;
+    z-index: -1;
 }
 
-.menus__cards{
-    margin-top:-45px;
+.menus__cards {
+    margin-top: -45px;
     border-radius: 50px;
     background-color: #F6F6F6;
     overflow: hidden;
     justify-content: space-between;
 
+    .like{
+        position:relative;
 
-    .fa-heart{
-        width:22px;
-        height:22px;  
-        padding-right:100px;
-        padding-top:35px;
-
-         &:hover{
-            background: linear-gradient(to bottom, #FF79DA, #9356DC);
-            background-clip: text;
-            color: transparent;
+        .fa-heart {
+        width: 22px;
+        height: 22px;
+        padding-right: 100px;
+        padding-top: 35px;
         }
-    }
-}
 
-.submenus{
-    padding:15px;
-    gap:15px;
+        .far{
+            position:absolute;
+            left:0px;
+            z-index:100;
     
-    &__card{
-        background-color: var(--white);
-        border-radius:15px; 
-        @include box-shadow;
-        padding:20px;
-        margin-bottom:15px;
-        justify-content: space-between;
-        gap:15px;
+            &:hover{
+                opacity:0;
 
-
-       &--plate{
-            gap:10px;
-            
-            .descript{
-            font-size:15px;
-            margin:0;
-            height:20px;
-            text-align:start;
+               & + .fas{
+                    opacity:1;
+                    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+                    background-clip: text;
+                    color:transparent;
+                }
             }
         }
 
-        .plate__price{
-            display:flex;
-            align-items:end;
-            font-weight:700;
-            font-size:15px;
+        .fas{
+            opacity:0;
         }
     }
 }
 
-.order{
-    padding-top:15px;
-    padding-bottom:40px;
+.submenus {
+    padding: 15px;
+    gap: 15px;
+    overflow-x:hidden;
+
+    .submenus1,
+    .submenus2, 
+    .submenus3 {
+        transform:translateY(101vh);
+        animation: slide-in;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+
+        &.submenus1{
+            animation-delay:300ms;
+        }
+
+        &.submenus2{
+            animation-delay:600ms;
+        }
+
+        &.submenus3{
+            animation-delay:900ms;
+        }
+    }
+    /*manque barre verte partielle sous ENTREES PLATS DESSERTS tertiary color*/
+
+    /*comment éviter que la card apparaisse en fixe avant le début de l'animation?*/
+    &__card {
+        background-color: var(--white);
+        border-radius: 15px;
+        @include box-shadow;
+        padding: 20px;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        gap: 15px;
+
+        &--plate {
+            gap: 10px;
+
+            &:active{
+                background-color:var
+            }
+
+            .descript {
+                font-size: 15px;
+                margin: 0;
+                height: 20px;
+                text-align: start;
+            }
+        }
+
+        .submenus__card--price {
+            display: flex;
+            align-items: end;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+}
+
+.order {
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
