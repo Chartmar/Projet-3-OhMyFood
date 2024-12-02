@@ -14,20 +14,21 @@
 
 .welcome{
     opacity:0;
-    animation : welcome 2s 3s ease-in forwards;
+    animation : welcome 180ms 2s ease-in forwards;
 }
 
-.loader { /*revoir*/
+.loader {
     
-    transform-origin:center;
-    animation: loader 5s ease-in-out 1;
+    animation: loader 2s ease-in-out forwards;
     animation-delay: 500ms;
 
         svg{
+            @include box-shadow;
             border-radius:25px;
-            width:100px;
-            height:100px;
-            padding:15px;
+            border:14px outset;
+            width:110px;
+            height:110px;
+            padding:30px;
             fill:var(--primary-color);
             background :linear-gradient(#FF79DA, #9356DC);
         }

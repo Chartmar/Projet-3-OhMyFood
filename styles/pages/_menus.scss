@@ -4,11 +4,14 @@
 .subheader {
     width: 100%;
     height: 32rem;
+    display: flex;
+    justify-content: center;
 }
 
 .restaurant__picture {
     width: 100%;
     height: 32rem;
+
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -21,35 +24,47 @@
     overflow: hidden;
     justify-content: space-between;
 
-    .like{
-        position:relative;
+    @media (min-width:1224px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
 
-        .fa-heart {
-        width: 22px;
-        height: 22px;
-        padding-right: 100px;
-        padding-top: 35px;
+    .like {
+        position: relative;
+
+        @media (min-width:1224px) {
+            padding-top: 20px;
         }
 
-        .far{
-            position:absolute;
-            left:0px;
-            z-index:100;
-    
-            &:hover{
-                opacity:0;
+        .fa-heart {
+            padding-right: 100px;
+            padding-top: 35px;
+        }
 
-               & + .fas{
-                    opacity:1;
+        .far {
+            position: absolute;
+            left: 0px;
+            z-index: 100;
+            transition: all 400ms ease-in;
+
+            &:hover {
+                opacity: 0;
+
+                &+.fas {
+                    opacity: 1;
                     background: linear-gradient(to bottom, #FF79DA, #9356DC);
                     background-clip: text;
-                    color:transparent;
+                    color: transparent;
+                    transition: all 400ms ease-in;
                 }
             }
         }
 
-        .fas{
-            opacity:0;
+        .fas {
+            opacity: 0;
+            transition: all 400ms ease-out;
         }
     }
 }
@@ -57,32 +72,36 @@
 .submenus {
     padding: 15px;
     gap: 15px;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
     .submenus1,
-    .submenus2, 
+    .submenus2,
     .submenus3 {
-        transform:translateY(101vh);
+        transform: translateY(101vh);
         animation: slide-in;
         animation-duration: 0.3s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
 
-        &.submenus1{
-            animation-delay:300ms;
+        &.submenus1 {
+            animation-delay: 300ms;
         }
 
-        &.submenus2{
-            animation-delay:600ms;
+        &.submenus2 {
+            animation-delay: 600ms;
         }
 
-        &.submenus3{
-            animation-delay:900ms;
+        &.submenus3 {
+            animation-delay: 900ms;
         }
     }
-    /*manque barre verte partielle sous ENTREES PLATS DESSERTS tertiary color*/
 
-    /*comment éviter que la card apparaisse en fixe avant le début de l'animation?*/
+    .underline {
+        width: 40px;
+        border-bottom: var(--tertiary-color) solid 3px;
+        margin-top: 10px;
+    }
+
     &__card {
         background-color: var(--white);
         border-radius: 15px;
@@ -91,12 +110,20 @@
         margin-bottom: 15px;
         justify-content: space-between;
         gap: 15px;
+        overflow: hidden;
+
+        &:hover &--price .select {
+            margin-right: -20px;
+
+        }
 
         &--plate {
             gap: 10px;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
 
-            &:active{
-                background-color:var
+            .plate {
+                text-overflow: ellipsis;
             }
 
             .descript {
@@ -104,15 +131,36 @@
                 margin: 0;
                 height: 20px;
                 text-align: start;
+                text-overflow: ellipsis;
             }
         }
 
         .submenus__card--price {
             display: flex;
-            align-items: end;
             font-weight: 700;
             font-size: 15px;
+            gap: 15px;
+
+            .price {
+                justify-content: center;
+                align-items: end;
+                text-wrap: nowrap;
+                /*vérifier sur textes longs*/
+            }
+
+            .select {
+                margin: -20px -80px -20px 0;
+                width: 60px;
+                background: var(--tertiary-color);
+                transform: translateX(0em);
+                transition-duration: 750ms;
+
+                .fa-circle-check {
+                    color: var(--white);
+                }
+            }
         }
+
     }
 }
 
