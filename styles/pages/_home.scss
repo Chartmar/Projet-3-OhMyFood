@@ -1,0 +1,145 @@
+.fonctionnement {
+    background-color: var(--white);
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .functions {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        @media (min-width:1224px) {
+            flex-direction: row;
+        }
+    }
+
+    .fonctionnement__functions {
+        padding-bottom: 20px;
+
+        @media (min-width:1224px) {
+            width: 33%;
+            justify-content: space-around;
+        }
+
+        &--number {
+            background: var(--primary-color);
+            border-radius: 50px;
+            width: 24px;
+            height: 24px;
+            color: var(--white);
+            position: relative;
+            left: 10px;
+        }
+
+        &--text {
+            @include box-shadow;
+            gap: 10px;
+            border-radius: 20px;
+            height: 72px;
+
+            background-color: #F6F6F6;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.restaurants {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .restaurants__cards {
+        gap: 18px;
+        padding-bottom: 30px;
+        width: 100%;
+        overflow: hidden;
+
+        @media (min-width:1224px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .restaurants__cards--unit {
+            background-color: var(--white);
+            border-radius: 15px;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 346px 1fr;
+            position: relative;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 346px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            .newbadge {
+                color: var(--tertiary-color-dark);
+                background-color: var(--tertiary-color);
+                width: 80px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .card-content {
+                padding-left: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .card-subtitle {
+                    font-size: 17px;
+                    font-weight: 300;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    text-align: left;
+                }
+            }
+
+            .like {
+                position: relative;
+
+                .fa-heart {
+                    padding-right: 60px;
+                    padding-top: 35px;
+                }
+
+                .far {
+                    position: absolute;
+                    left: 0px;
+                    z-index: 100;
+                    transition: all 400ms ease-in;
+
+                    &:hover {
+                        opacity: 0;
+
+                        &+.fas {
+                            opacity: 1;
+                            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+                            background-clip: text;
+                            color: transparent;
+                            transition: all 400ms ease-in;
+                        }
+                    }
+                }
+
+                .fas {
+                    opacity: 0;
+                    transition: all 400ms ease-in;
+                }
+            }
+        }
+    }
+}
