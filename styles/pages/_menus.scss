@@ -96,11 +96,16 @@
         }
     }
 
-    .underline {
-        width: 40px;
-        text-decoration:underline var(--tertiary-color);
-        text-decoration-thickness: 3px;
-        text-underline-offset: 10px;
+    .submenus1__title,
+    .submenus2__title,
+    .submenus3__title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        .underline {
+            width: 40px;
+            border-top: solid 3px var(--tertiary-color);
+        }
     }
 
     &__card {
