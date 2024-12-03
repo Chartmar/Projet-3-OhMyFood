@@ -3,7 +3,7 @@
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
   --white: #FFFFFF;
-  --tertiary-color-dark:#008766;
+  --tertiary-color-dark: #008766;
 }
 
 * {
@@ -57,9 +57,7 @@ h4 {
 h5 {
   font-weight: 300;
   font-size: 16px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h6 {
@@ -508,12 +506,17 @@ footer ul li a {
 .submenus .submenus3.submenus3 {
   animation-delay: 900ms;
 }
-.submenus .underline {
+.submenus .submenus1__title,
+.submenus .submenus2__title,
+.submenus .submenus3__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.submenus .submenus1__title .underline,
+.submenus .submenus2__title .underline,
+.submenus .submenus3__title .underline {
   width: 40px;
-  -webkit-text-decoration: underline var(--tertiary-color);
-          text-decoration: underline var(--tertiary-color);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 10px;
+  border-top: solid 3px var(--tertiary-color);
 }
 .submenus__card {
   background-color: var(--white);

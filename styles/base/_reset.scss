@@ -3,7 +3,7 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0;
     --white: #FFFFFF;
-    --tertiary-color-dark:#008766;
+    --tertiary-color-dark: #008766;
 }
 
 
@@ -16,8 +16,8 @@ body {
     padding: 0;
     background-color: #F6F6F6;
     max-width: 1440px;
-    min-width:320px;
-    margin:auto;
+    min-width: 320px;
+    margin: auto;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h2 {
     padding-bottom: 25px;
 }
 
-h3{
+h3 {
     font-size: 18px;
     font-weight: 700;
     padding-top: 20px;
@@ -46,27 +46,25 @@ h3{
     margin-bottom: 5px;
 }
 
-h4{
+h4 {
     font-family: 'Shrikhand', sans-serif;
-    font-size:28px;
-    font-weight:400;
+    font-size: 28px;
+    font-weight: 400;
     font-style: italic;
-    padding:40px 0 0 25px;
-    margin:0;
+    padding: 40px 0 0 25px;
+    margin: 0;
 }
 
-h5{
-    font-weight:300;
-    font-size:16px;
-    margin-top:40px;
-    margin-bottom:20px;
-    padding-bottom:10px;
+h5 {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-h6{
-    font-weight:500;
-    font-size:18px;
-    margin:0;
+h6 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
 }
 
 p {
@@ -81,7 +79,7 @@ p {
 a {
     text-decoration: none;
 
-    &:visited{
-        color:black;
+    &:visited {
+        color: black;
     }
 }
