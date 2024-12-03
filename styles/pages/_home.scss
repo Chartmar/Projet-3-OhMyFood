@@ -93,11 +93,12 @@
                 font-size: 14px;
                 font-weight: 500;
             }
-
-            .card-content {
-                padding-left: 15px;
-                display: flex;
-                justify-content: space-between;
+            
+            .card-content{
+                padding-left:15px;
+                display:grid;
+                grid-template-columns: 5fr 1fr;
+        
 
                 .card-subtitle {
                     font-size: 17px;
