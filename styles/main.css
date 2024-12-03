@@ -510,8 +510,10 @@ footer ul li a {
 }
 .submenus .underline {
   width: 40px;
-  border-bottom: var(--tertiary-color) solid 3px;
-  margin-top: 10px;
+  -webkit-text-decoration: underline var(--tertiary-color);
+          text-decoration: underline var(--tertiary-color);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
 }
 .submenus__card {
   background-color: var(--white);
