@@ -114,15 +114,16 @@
 
         &:hover &--price .select {
             margin-right: -20px;
-
         }
 
         &--plate {
             gap: 10px;
-            text-wrap: nowrap;
-            text-overflow: ellipsis;
+            overflow: hidden;
+
 
             .plate {
+                overflow: hidden;
+                white-space: nowrap;
                 text-overflow: ellipsis;
             }
 
@@ -131,6 +132,8 @@
                 margin: 0;
                 height: 20px;
                 text-align: start;
+                overflow: hidden;
+                white-space: nowrap;
                 text-overflow: ellipsis;
             }
         }
@@ -140,12 +143,11 @@
             font-weight: 700;
             font-size: 15px;
             gap: 15px;
+            white-space: nowrap;
 
             .price {
                 justify-content: center;
                 align-items: end;
-                text-wrap: nowrap;
-                /*vérifier sur textes longs*/
             }
 
             .select {
