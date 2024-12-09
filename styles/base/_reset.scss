@@ -44,6 +44,10 @@ h3 {
     padding-top: 20px;
     margin-top: 0;
     margin-bottom: 5px;
+
+    &:link{
+        color:black;
+    }
 }
 
 h4 {
@@ -74,6 +78,10 @@ p {
     height: 46px;
     margin-top: 0;
     text-align: center;
+
+    &:link{
+        color:black;
+    }
 }
 
 a {
