@@ -445,6 +445,8 @@ footer ul li a {
 }
 .menus__cards .like {
   position: relative;
+  width: 50px;
+  height: 50px;
 }
 @media (min-width: 1224px) {
   .menus__cards .like {
