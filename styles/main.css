@@ -44,6 +44,9 @@ h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
+h3:link {
+  color: black;
+}
 
 h4 {
   font-family: "Shrikhand", sans-serif;
@@ -74,12 +77,15 @@ p {
   margin-top: 0;
   text-align: center;
 }
+p:link {
+  color: black;
+}
 
 a {
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: black !important;
 }
 
 .fa-solid {
